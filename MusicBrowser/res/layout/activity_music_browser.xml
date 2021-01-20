@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    
+	<LinearLayout
+	    android:id="@+id/first_panel"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+   		android:orientation="vertical" >
+   		
+		<LinearLayout
+		    android:id="@+id/file_path_info"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2.5"
+			android:gravity="center"
+    		android:orientation="vertical" >
+    		
+			<TextView 
+			    android:id="@+id/file_path_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#00FF00"
+				android:text="@string/file_path" />
+			
+			<TextView 
+			    android:id="@+id/file_path"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#00FF00"
+			    android:textStyle="italic"
+			    android:ellipsize="middle"
+			    android:scrollHorizontally="true"
+			    android:singleLine="true" />
+				
+		    <Button
+		        android:id="@+id/add_to_play_list_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:text="@string/add_to_play_list" />
+			
+		</LinearLayout>
+	
+		<View
+		    android:id="@+id/hori_seperator_in_first_panel "
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/darker_gray"/>
+	
+		<FrameLayout
+		    android:id="@+id/files_fragment"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="4" />
+		
+		<View
+		    android:id="@+id/hori_seperator_2_in_first_panel "
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/darker_gray"/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    android:gravity="center"
+			android:orientation="horizontal" >
+		
+			<TextView 
+			    android:id="@+id/play_list_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#00FF00"
+		        android:text="@string/play_list_title"
+			    android:scrollHorizontally="true"
+			    android:singleLine="true" />
+			
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/button_panel"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.5"
+			style="?android:attr/buttonBarStyle"
+			android:orientation="horizontal" >
+		
+		    <Button 
+		    	android:id="@+id/button1" 
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:ellipsize="end"
+		    	android:text="@string/remove_play_list_1"
+		    	style="?android:attr/buttonBarButtonStyle"
+		        android:contentDescription="@string/none" /> 
+		        
+		    <Button 
+		    	android:id="@+id/button2" 
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:ellipsize="end"
+		    	android:text="@string/remove_play_list_2"
+		    	style="?android:attr/buttonBarButtonStyle"
+		        android:contentDescription="@string/none" /> 
+		        
+		    <Button 
+		    	android:id="@+id/button3" 
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:ellipsize="end"
+		    	android:text="@string/remove_play_list_3"
+		    	style="?android:attr/buttonBarButtonStyle"
+		        android:contentDescription="@string/none" /> 
+	        
+		</LinearLayout>
+
+		<View
+		    android:id="@+id/hori_seperator_in_PlayList"
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/darker_gray"/>
+		
+		<ListView
+			android:id="@+id/list_in_activity"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="3"
+		 	android:cacheColorHint="#00000000"
+			android:fadeScrollbars="false" />
+<!--	
+		  <FrameLayout
+		    android:id="@+id/files_play_list_fragment"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="3" />
+-->
+	</LinearLayout>
+    
+	<View
+	    android:id="@+id/vert_seperator"
+	    android:layout_width="2dp"
+	    android:layout_height="match_parent"
+		android:visibility="visible"
+	    android:background="@android:color/darker_gray"/>
+
+	<LinearLayout
+	    android:id="@+id/second_panel"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+   		android:orientation="vertical" >
+    
+		<LinearLayout
+		    android:id="@+id/number_of_songs_ll"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.5"
+			android:gravity="center"
+    		android:orientation="vertical" >
+			
+			<TextView
+			    android:id="@+id/number_of_songs_title"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+				android:text="@string/music_list"
+			    android:visibility="gone"
+			    android:textColor="#00FF00" />
+		    
+			<TextView
+			    android:id="@+id/number_of_songs"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#00FF00"
+			    android:visibility="gone"
+			    android:textStyle="italic" />
+			
+		</LinearLayout>
+	    
+		<View
+		    android:id="@+id/hori_seperator_in_second_panel "
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:visibility="gone"
+		    android:background="@android:color/darker_gray"/>
+		
+	    <FrameLayout
+	        android:id="@+id/musics_fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp" 
+	        android:layout_weight="8.5" />
+		
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/vert_seperator_betw_second_and_third_panel "
+	    android:layout_width="2dp"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    android:background="@android:color/darker_gray"/>
+	
+	<LinearLayout
+	    android:id="@+id/third_panel"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+    
+	    <FrameLayout
+	        android:id="@+id/media_palyer_fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    
+	</LinearLayout>
+	
+</LinearLayout>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+

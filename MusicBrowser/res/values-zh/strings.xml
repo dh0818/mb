@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">音樂瀏覽器</string>
+    <string name="none">無</string>
+	<string name="action_settings">設定</string>
+	<string name="inital_Time">0 分, 0 秒</string>
+	<string name="file_path">資料夾路徑</string>
+	<string name="music_list">音樂一覽</string>
+	<string name="play_list_title">捷徑</string>
+	<string name="add_to_play_list">加入捷徑</string>
+	<string name="audio_file">個音樂檔案</string>
+	<string name="audio_files">個音樂檔案</string>
+	<string name="remove">移除</string>
+	<string name="empty">(空)</string>
+	<string name="audio_title_title">檔名:</string>
+	<string name="audio_info_title">訊息:</string>
+	<string name="media_player_info_title">播放器訊息:</string>
+	<string name="leave_message">你確定要現在離開嗎?</string>
+	<string name="album">專輯</string>
+	<string name="artist">參與演出者</string>
+	<string name="yes">是</string>
+	<string name="no">否</string>
+	<string name="min">分</string>
+	<string name="sec">秒</string>
+</resources>

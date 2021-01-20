@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">MusicBrowser</string>
+    <string name="none">none</string>
+	<string name="action_settings">Settings</string>
+	<string name="inital_Time">0 min, 0 sec</string>
+	<string name="file_path">FILE PATH</string>
+	<string name="music_list">MUSIC LIST</string>
+	<string name="add_to_play_list">ADD TO PALYLIST</string>
+	<string name="remove_play_list_1">REMOVE PLAYLIST 1</string>
+	<string name="remove_play_list_2">REMOVE PLAYLIST 2</string>
+	<string name="remove_play_list_3">REMOVE PLAYLIST 3</string>
+	<string name="play_list_title">PLAYLIST</string>
+	<string name="audio_file">audio file</string>
+	<string name="audio_files">audio files</string>
+	<string name="remove">REMOVE</string>
+	<string name="empty">(EMPTY)</string>
+	<string name="audio_title_title">AUDIO TITLE:</string>
+	<string name="audio_info_title">AUDIO INFO:</string>
+	<string name="media_player_info_title">MEDIA PLAYER INFO:</string>
+	<string name="leave_message">Are you sure you want to leave?</string>
+	<string name="album">ALBUM</string>
+	<string name="artist">ARTIST</string>
+	<string name="yes">YES</string>
+	<string name="no">NO</string>
+	<string name="min">min</string>
+	<string name="sec">sec</string>
+</resources>
